@@ -1,118 +1,183 @@
 # -------------------------------------------
 # Exercise 2: Conditional Statements
 # -------------------------------------------
-# In this exercise, you will learn how to use conditional statements in Python.
-# Conditional statements let your program make decisions based on True or False values.
-#
-# Key keywords:
-# - if    : start a condition
-# - elif  : check another condition if the first condition is False
-# - else  : run code if no other conditions are True
-#
-# -------------------------------------------
+# Learning Objective:
+# Learn to use conditional statements in Python, practise pair programming,
+# and apply basic Git commands in a team workflow.
 
-# Step 1: Simple if statement
-# ---------------------------
-# Start with one condition.
+# Pair Programming Roles:
+# - One person is the "Driver" (types), the other(s) is the "Navigator" (guides).
+# - Switch roles and computers after each step.
+# - Before switching, commit and push your code.
+# - After switching, the new Driver must pull the latest version.
 
-# Example of a simple if statement (just syntax):
-# if some_condition:
-#     print("Write your message here")
-
-# TODO:
-# 1. Create a variable called `number` and give it a value.
-# 2. Write an if statement to check if the number is greater than 0.
-# 3. Print a message if the condition is True.
-
-# Write your code below:
-
-
-# Step 2: if-else statement
-# -------------------------
-# Sometimes you want to do one thing if the condition is True, 
-# and something else if it is False.
-
-# Example (just syntax):
-# if some_condition:
-#     print("Message if True")
-# else:
-#     print("Message if False")
-
-# TODO:
-# 1. Change your code from Step 1 to add an else statement.
-# 2. Print a different message if the number is 0 or less.
-
-# Write your code below:
-
-
-# Step 3: if-elif-else statement
-# ------------------------------
-# Use elif to check more than one condition.
-
-# Example (just syntax):
-# if condition1:
-#     print("Message 1")
-# elif condition2:
-#     print("Message 2")
-# else:
-#     print("Message 3")
-
-# TODO:
-# 1. Change your code to use an elif statement.
-# 2. Check three cases: positive number, zero, negative number.
-# 3. Print your own messages for each case.
-
-# Write your code below:
-
+# Key Python Terms:
+# - if    : begins a condition block
+# - elif  : checks another condition if the previous ones are false
+# - else  : runs only if all previous conditions are false
 
 # -------------------------------------------
-# Submitting Your Work
+# Step 1: Using a Simple if Statement
 # -------------------------------------------
-# When you have finished this exercise:
-# 1. Save your file
-# 2. Open the terminal
-# 3. Run the following commands:
+# Task 1:
+# - Create a variable called `number` and assign it a value.
+#   Try several examples: a positive number, a negative number, and zero.
+
+# Task 2:
+# - Write an if statement that checks if the number is greater than 0.
+#   If it is, print: "The number is positive."
+
+# Task 3:
+# - Add a second if statement to check if the number is even.
+#   If it is, print: "The number is even."
+
+# Task 4:
+# - Test with different values. What messages appear for each?
+
+# Write your Step 1 code below:
+
+
+# ---- GIT STEP ----
+# 1. Save your work.
+# 2. In the terminal, run:
 #    git add Ex2_conditionals.py
-#    git commit -m "Completed conditional statements exercise"
+#    git commit -m "Step 1 complete"
 #    git push origin main
-# Check GitHub to see your changes.
+# 3. SWITCH computers and roles.
+# 4. On the new computer, run:
+#    git pull origin main
+
 # -------------------------------------------
+# Step 2: Adding else and Practising Boolean Logic
+# -------------------------------------------
+# Task 1:
+# - Add an else block to the "greater than 0" check.
+#   If false, print: "The number is zero or negative."
+
+# Task 2:
+# - Add an else to the even/odd check.
+#   If it's not even, print: "The number is odd."
+
+# Task 3:
+# - Add a new condition using `and`:
+#     - If the number is divisible by both 2 and 3, print: "Divisible by 2 and 3."
+#     - Otherwise, print: "Not divisible by both."
+
+# Task 4:
+# - Try using the `or` operator to check if divisible by either 2 or 3.
+
+# Write your Step 2 code below:
+
+
+# ---- GIT STEP ----
+# 1. Save your work.
+# 2. Run:
+#    git add Ex2_conditionals.py
+#    git commit -m "Step 2 complete"
+#    git push origin main
+# 3. SWITCH computers and roles.
+# 4. On the new computer, run:
+#    git pull origin main
+
+# -------------------------------------------
+# Step 3: Using if - elif - else
+# -------------------------------------------
+# Task 1:
+# - Replace your previous if-else structure with if - elif - else.
+# - Check three cases:
+#     1. Number is positive
+#     2. Number is zero
+#     3. Number is negative
+
+# Task 2:
+# - Add another elif condition:
+#     - If the number is greater than 100, print: "That's a large number!"
+
+# Task 3:
+# - If the number is between 1 and 10 (inclusive), print: "A small positive number."
+
+# Task 4:
+# - Test with different values. Try to hit every condition.
+
+# Write your Step 3 code below:
+
+
+# ---- GIT STEP ----
+# 1. Save your work.
+# 2. Run:
+#    git add Ex2_conditionals.py
+#    git commit -m "Step 3 complete"
+#    git push origin main
+# 3. SWITCH computers and roles.
+# 4. On the new computer, run:
+#    git pull origin main
 
 # -------------------------------------------
 # EXTENSION ACTIVITIES
 # -------------------------------------------
+# Continue rotating after each activity. Use Git to sync between each.
 
-# Extension 1:
-# Ask the user to type a number.
-# Use if-elif-else to print a message depending on the number.
+# Extension 1: Interactive Number Check
+# -------------------------------------
+# - Ask the user to enter a number.
+# - Use if-elif-else to check if it’s positive, negative, or zero.
+# - Then, also check if it’s even or odd.
+# - Print a message such as: "The number is positive and even."
 
-# Extension 2:
-# Ask the user to type their age.
-# Use if-elif-else to print messages for different age groups:
-# - under 13
-# - 13 to 17
-# - 18 to 64
-# - 65 or older
+# Write Extension 1 code below:
 
-# Extension 3 (more challenging):
-# Ask the user to type a username and a password.
-# - If both are correct, print a success message.
-# - If the username is correct but the password is wrong, print a different message.
-# - If the username is wrong, print another message.
-# Hint: You may need nested if statements or multiple conditions with and/or.
 
-# Write your extension code below:
+# ---- GIT STEP (after completing this extension) ----
+# git add Ex2_conditionals.py
+# git commit -m "Completed Extension 1"
+# git push origin main
+# Switch machines and git pull
 
+# Extension 2: Age Group Checker
+# ------------------------------
+# - Ask the user to input their age.
+# - Print a message depending on the age group:
+#     - Under 13 → "You are a child."
+#     - 13 to 17 → "You are a teenager."
+#     - 18 to 64 → "You are an adult."
+#     - 65 or older → "You are a senior."
+
+# Write Extension 2 code below:
+
+
+# ---- GIT STEP ----
+# git add Ex2_conditionals.py
+# git commit -m "Completed Extension 2"
+# git push origin main
+# Switch machines and git pull
+
+# Extension 3 (Challenge): Login System
+# -------------------------------------
+# - Set two variables for the correct username and password.
+# - Ask the user to enter both.
+# - Use if-elif-else to:
+#     - Check if both are correct → print "Login successful!"
+#     - Username correct but password wrong → print "Incorrect password."
+#     - Username incorrect → print "Username not found."
+
+# Bonus:
+# - Add an attempt limit (max 3 tries).
+# - Use nested if statements if you like.
+
+# Write Extension 3 code below:
+
+
+# ---- GIT STEP ----
+# git add Ex2_conditionals.py
+# git commit -m "Completed Extension 3"
+# git push origin main
+# Switch machines and git pull
 
 # -------------------------------------------
-# Submitting Your Work
+# FINAL SUBMISSION
 # -------------------------------------------
-# When you have finished this exercise:
-# 1. Save your file
-# 2. Open the terminal
-# 3. Run the following commands:
-#    git add Ex2_conditionals.py
-#    git commit -m "Completed extension exercises"
-#    git push origin main
-# Check GitHub to see your changes.
+# Once your team has completed all required sections:
+# 1. Make sure your last set of changes has been committed and pushed.
+# 2. Check GitHub to confirm the latest code is there.
+# 3. Celebrate completing your collaborative conditional statements exercise.
 # -------------------------------------------
