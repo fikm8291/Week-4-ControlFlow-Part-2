@@ -17,95 +17,95 @@
 # - else  : runs only if all previous conditions are false
 
 # -------------------------------------------
-# Step 1: Using a Simple if Statement
+# Task 1: Using a Simple if Statement
 # -------------------------------------------
-# Note: Read all of the tasks below first before starting!
+# Note: Read all of the instructions below first before starting!
 
-# Task 1:
+# Step 1:
 # - Create a variable called `number` and assign it a value.
 #   Try several examples: a positive number, a negative number, and zero.
 
-# Task 2:
+# Step 2:
 # - Write an if statement that checks if the number is greater than 0.
 #   If it is, print: "The number is positive."
 
-# Task 3:
+# Step 3:
 # - Add a second if statement to check if the number is even.
 #   If it is, print: "The number is even."
 
-# Task 4:
+# Step 4:
 # - Test with different values. What messages appear for each?
 
-# Write your Step 1 code below:
+# Write your Task 1 code below:
 
 
 # ---- GIT STEP ----
 # 1. Save your work.
 # 2. In the terminal, run:
 #    git add Ex2_conditionals.py
-#    git commit -m "Step 1 complete"
+#    git commit -m "Task 1 complete"
 #    git push origin main
 # 3. SWITCH computers and roles.
 # 4. On the new computer, run:
 #    git pull origin main
 
 # -------------------------------------------
-# Step 2: Adding else and Practising Boolean Logic
+# Task 2: Adding else and Practising Boolean Logic
 # -------------------------------------------
-# Note: Read all of the tasks below first before starting!
+# Note: Read all of the instructions below first before starting!
 
-# Task 1:
+# Step 1:
 # - Add an else block to the "greater than 0" check.
 #   If false, print: "The number is zero or negative."
 
-# Task 2:
+# Step 2:
 # - Add an else to the even/odd check.
 #   If it's not even, print: "The number is odd."
 
-# Task 3:
+# Step 3:
 # - Add a new condition using `and`:
 #     - If the number is divisible by both 2 **and** 3, print: "Divisible by 2 and 3."
 #     - Otherwise, print: "Not divisible by both."
 
-# Task 4:
+# Step 4:
 # - Try using the `or` operator to check if divisible by either 2 or 3.
 
-# Write your Step 2 code below:
+# Write your Task 2 code below:
 
 
 # ---- GIT STEP ----
 # 1. Save your work.
 # 2. Run:
 #    git add Ex2_conditionals.py
-#    git commit -m "Step 2 complete"
+#    git commit -m "Task 2 complete"
 #    git push origin main
 # 3. SWITCH computers and roles.
 # 4. On the new computer, run:
 #    git pull origin main
 
 # -------------------------------------------
-# Step 3: Using if - elif - else
+# Task 3: Using if - elif - else
 # -------------------------------------------
-# Note: Read all of the tasks below first before starting!
+# Note: Read all of the instructions below first before starting!
 
-# Task 1:
+# Step 1:
 # - Replace your previous if-else structure with if - elif - else.
 # - Check three cases:
 #     1. Number is positive
 #     2. Number is zero
 #     3. Number is negative
 
-# Task 2:
+# Step 2:
 # - Add another elif condition:
 #     - If the number is greater than 100, print: "That's a large number!"
 
-# Task 3:
+# Step 3:
 # - If the number is between 1 and 10 (inclusive), print: "A small positive number."
 
-# Task 4:
+# Step 4:
 # - Test with different values. Try to hit every condition.
 
-# Write your Step 3 code below:
+# Write your Task 3 code below:
 
 
 # ---- GIT STEP ----
