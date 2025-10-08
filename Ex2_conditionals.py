@@ -19,6 +19,8 @@
 # -------------------------------------------
 # Step 1: Using a Simple if Statement
 # -------------------------------------------
+# Note: Read all of the tasks below first before starting!
+
 # Task 1:
 # - Create a variable called `number` and assign it a value.
 #   Try several examples: a positive number, a negative number, and zero.
@@ -50,6 +52,8 @@
 # -------------------------------------------
 # Step 2: Adding else and Practising Boolean Logic
 # -------------------------------------------
+# Note: Read all of the tasks below first before starting!
+
 # Task 1:
 # - Add an else block to the "greater than 0" check.
 #   If false, print: "The number is zero or negative."
@@ -60,7 +64,7 @@
 
 # Task 3:
 # - Add a new condition using `and`:
-#     - If the number is divisible by both 2 and 3, print: "Divisible by 2 and 3."
+#     - If the number is divisible by both 2 **and** 3, print: "Divisible by 2 and 3."
 #     - Otherwise, print: "Not divisible by both."
 
 # Task 4:
@@ -82,6 +86,8 @@
 # -------------------------------------------
 # Step 3: Using if - elif - else
 # -------------------------------------------
+# Note: Read all of the tasks below first before starting!
+
 # Task 1:
 # - Replace your previous if-else structure with if - elif - else.
 # - Check three cases:
