@@ -1,189 +1,220 @@
 # -------------------------------------------
 # Exercise 2: Conditional Statements
 # -------------------------------------------
-# Learning Objective:
-# Learn to use conditional statements in Python, practise pair programming,
-# and apply basic Git commands in a team workflow.
+#
+# GOAL:
+# 1. Master decision making in Python (if, elif, else).
+# 2. Practise the Pair Programming Workflow: Driver vs Navigator.
+# 3. Learn to sync code between team members (Push & Pull).
+#
+# CONCEPT:
+# Conditionals allow your code to make choices, like a fork in the road.
+# - if: "If it is raining, take an umbrella."
+# - elif: "Otherwise, if it is sunny, take sunglasses."
+# - else: "Otherwise (for anything else), just go outside."
+#
+# PAIR PROGRAMMING RULES:
+# - The DRIVER types the code.
+# - The NAVIGATOR reads the instructions and guides the driver.
+# - You will SWITCH roles and computers after every task!
+# -------------------------------------------
 
-# Pair Programming Roles:
-# - One person is the "Driver" (types), the other(s) is the "Navigator" (guides).
-# - Switch roles and computers after each step.
-# - Before switching, commit and push your code.
-# - After switching, the new Driver must pull the latest version.
-
-# Key Python Terms:
-# - if    : begins a condition block
-# - elif  : checks another condition if the previous ones are false
-# - else  : runs only if all previous conditions are false
 
 # -------------------------------------------
-# Task 1: Using a Simple if Statement
+# Task 1: Simple Decisions (if)
 # -------------------------------------------
-# Note: Read all of the instructions below first before starting!
+print("-------------------------------------------\n"
+    + "Task 1: Simple Decisions\n"
+    + "-------------------------------------------")
 
-# Step 1:
-# - Create a variable called `number` and assign it a value.
-#   Try several examples: a positive number, a negative number, and zero.
+# TODO:
+# 1. Create a variable called 'number' and assign it any integer you like.
+# 2. Write an 'if' statement:
+#    - Check IF the number is greater than 0.
+#    - If it is, print "The number is positive."
+# 3. Write a second (separate) 'if' statement:
+#    - Check IF the number is even (Hint: number % 2 == 0).
+#    - If it is, print "The number is even."
 
-# Step 2:
-# - Write an if statement that checks if the number is greater than 0.
-#   If it is, print: "The number is positive."
-
-# Step 3:
-# - Add a second if statement to check if the number is even.
-#   If it is, print: "The number is even."
-
-# Step 4:
-# - Test with different values. What messages appear for each?
-
-# Write your Task 1 code below:
+# Write your code below:
 
 
-# ---- GIT STEP ----
-# 1. Save your work.
-# 2. In the terminal, run:
+# -------------------------------------------
+# SAVING YOUR WORK
+# -------------------------------------------
+# 1. Save your file (Ctrl+S or Cmd+S).
+# 2. Open the terminal.
+# 3. Run:
 #    git add Ex2_conditionals.py
 #    git commit -m "Task 1 complete"
 #    git push origin main
-# 3. SWITCH computers and roles.
-# 4. On the new computer, run:
-#    git pull origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
+# -------------------------------------------
+
 
 # -------------------------------------------
-# Task 2: Adding else and Practising Boolean Logic
+# Task 2: Two-Way Logic (if - else)
 # -------------------------------------------
-# Note: Read all of the instructions below first before starting!
+# INSTRUCTION: You are now at a new computer. Get the latest code!
+# 1. Open the terminal.
+# 2. Run: `git pull origin main`
 
-# Step 1:
-# - Add an else block to the "greater than 0" check.
-#   If false, print: "The number is zero or negative."
+print("\n-------------------------------------------\n"
+    + "Task 2: Two-Way Logic\n"
+    + "-------------------------------------------")
 
-# Step 2:
-# - Add an else to the even/odd check.
-#   If it's not even, print: "The number is odd."
+# TODO:
+# 1. Update your first check from Task 1:
+#    - Add an 'else' block.
+#    - If the number is NOT positive, print "The number is zero or negative."
+# 2. Update your second check from Task 1:
+#    - Add an 'else' block.
+#    - If the number is NOT even, print "The number is odd."
 
-# Step 3:
-# - Add a new condition using `and`:
-#     - If the number is divisible by both 2 **and** 3, print: "Divisible by 2 and 3."
-#     - Otherwise, print: "Not divisible by both."
-
-# Step 4:
-# - Try using the `or` operator to check if divisible by either 2 or 3.
-
-# Write your Task 2 code below:
+# Write your code below:
 
 
-# ---- GIT STEP ----
-# 1. Save your work.
+# -------------------------------------------
+# SAVING YOUR WORK
+# -------------------------------------------
+# 1. Save your file.
 # 2. Run:
 #    git add Ex2_conditionals.py
 #    git commit -m "Task 2 complete"
 #    git push origin main
-# 3. SWITCH computers and roles.
-# 4. On the new computer, run:
-#    git pull origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
+# -------------------------------------------
+
 
 # -------------------------------------------
-# Task 3: Using if - elif - else
+# Task 3: Multi-Way Logic (if - elif - else)
 # -------------------------------------------
-# Note: Read all of the instructions below first before starting!
+# INSTRUCTION: Get the code from the previous Driver.
+# 1. Run: `git pull origin main`
 
-# Step 1:
-# - Replace your previous if-else structure with if - elif - else.
-# - Check three cases:
-#     1. Number is positive
-#     2. Number is zero
-#     3. Number is negative
+print("\n-------------------------------------------\n"
+    + "Task 3: Multi-Way Logic\n"
+    + "-------------------------------------------")
 
-# Step 2:
-# - Add another elif condition:
-#     - If the number is greater than 100, print: "That's a large number!"
+# TODO:
+# 1. Comment out your code from Tasks 1 and 2 (so it doesn't run).
+# 2. Create a variable called 'temperature'.
+# 3. Write a chain of logic:
+#    - IF temp is greater than 30, print "It's hot!"
+#    - ELIF temp is greater than 15, print "It's mild."
+#    - ELIF temp is greater than 0, print "It's cold."
+#    - ELSE print "It's freezing!"
+# 4. Test it by changing the variable value.
 
-# Step 3:
-# - If the number is between 1 and 10 (inclusive), print: "A small positive number."
-
-# Step 4:
-# - Test with different values. Try to hit every condition.
-
-# Write your Task 3 code below:
+# Write your code below:
 
 
-# ---- GIT STEP ----
-# 1. Save your work.
+# -------------------------------------------
+# SAVING YOUR WORK
+# -------------------------------------------
+# 1. Save your file.
 # 2. Run:
 #    git add Ex2_conditionals.py
-#    git commit -m "Step 3 complete"
+#    git commit -m "Task 3 complete"
 #    git push origin main
-# 3. SWITCH computers and roles.
-# 4. On the new computer, run:
-#    git pull origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
+# -------------------------------------------
+
 
 # -------------------------------------------
 # EXTENSION ACTIVITIES
 # -------------------------------------------
-# Continue rotating after each activity. Use Git to sync between each.
 
-# Extension 1: Interactive Number Check
-# -------------------------------------
-# - Ask the user to enter a number.
-# - Use if-elif-else to check if it’s positive, negative, or zero.
-# - Then, also check if it’s even or odd.
-# - Print a message such as: "The number is positive and even."
+# Extension 1: Exam Grade Calculator
+# -------------------------------------------
+# INSTRUCTION: Run `git pull origin main` first.
 
-# Write Extension 1 code below:
+print("\n-------------------------------------------\n"
+    + "Extension 1: Exam Grade Calculator\n"
+    + "-------------------------------------------")
 
+# TODO:
+# 1. Ask the user for their exam score (0 to 100).
+#    (Remember to convert the input to an integer).
+# 2. Use if/elif/else to print the grade:
+#    - Greater than or equal to 90: "Grade A"
+#    - Greater than or equal to 80: "Grade B"
+#    - Greater than or equal to 70: "Grade C"
+#    - Otherwise: "Please retake the exam."
 
-# ---- GIT STEP (after completing this extension) ----
-# git add Ex2_conditionals.py
-# git commit -m "Completed Extension 1"
-# git push origin main
-# Switch machines and git pull
-
-# Extension 2: Age Group Checker
-# ------------------------------
-# - Ask the user to input their age.
-# - Print a message depending on the age group:
-#     - Under 13 → "You are a child."
-#     - 13 to 17 → "You are a teenager."
-#     - 18 to 64 → "You are an adult."
-#     - 65 or older → "You are a senior."
-
-# Write Extension 2 code below:
+# Write your code below:
 
 
-# ---- GIT STEP ----
-# git add Ex2_conditionals.py
-# git commit -m "Completed Extension 2"
-# git push origin main
-# Switch machines and git pull
+# Extension 2: The Login System
+# -------------------------------------------
+print("\n-------------------------------------------\n"
+    + "Extension 2: The Login System\n"
+    + "-------------------------------------------")
 
-# Extension 3 (Challenge): Login System
-# -------------------------------------
-# - Set two variables for the correct username and password.
-# - Ask the user to enter both.
-# - Use if-elif-else to:
-#     - Check if both are correct → print "Login successful!"
-#     - Username correct but password wrong → print "Incorrect password."
-#     - Username incorrect → print "Username not found."
+# TODO:
+# 1. Set a variable 'correct_password' to "secret123".
+# 2. Ask the user to input a password.
+# 3. Check the input:
+#    - IF it matches exactly: print "Access Granted".
+#    - ELIF it matches "Secret123" (wrong case): print "Close! Check your caps lock."
+#    - ELSE: print "Access Denied".
 
-# Bonus:
-# - Add an attempt limit (max 3 tries).
-# - Use nested if statements if you like.
+# Write your code below:
 
-# Write Extension 3 code below:
-
-
-# ---- GIT STEP ----
-# git add Ex2_conditionals.py
-# git commit -m "Completed Extension 3"
-# git push origin main
-# Switch machines and git pull
 
 # -------------------------------------------
-# FINAL SUBMISSION
+# SAVING YOUR WORK
 # -------------------------------------------
-# Once your team has completed all required sections:
-# 1. Make sure your last set of changes has been committed and pushed.
-# 2. Check GitHub to confirm the latest code is there.
-# 3. Celebrate completing your collaborative conditional statements exercise.
+# 1. Save your file.
+# 2. Run:
+#    git add Ex2_conditionals.py
+#    git commit -m "Completed extensions"
+#    git push origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
+# -------------------------------------------
+
+
+# -------------------------------------------
+# ADVANCED ACTIVITY: The FizzBuzz Challenge
+# -------------------------------------------
+# INSTRUCTION: Run `git pull origin main` first.
+
+print("\n-------------------------------------------\n"
+    + "ADVANCED ACTIVITY: The FizzBuzz Challenge\n"
+    + "-------------------------------------------")
+
+# This is the most famous programming interview question in the world!
+#
+# TODO:
+# 1. Ask the user for a number.
+# 2. Check the number against these rules (Order matters!):
+#    - If divisible by 3 AND 5: Print "FizzBuzz"
+#    - If divisible by only 3: Print "Fizz"
+#    - If divisible by only 5: Print "Buzz"
+#    - Otherwise: Print the number itself.
+#
+# HINT:
+# Check the "FizzBuzz" condition FIRST. Why?
+# If a number is 15, it is divisible by 3. If you check that first,
+# the code will stop and print "Fizz" instead of "FizzBuzz".
+
+# Write your code below:
+
+
+# -------------------------------------------
+# SAVING YOUR WORK
+# -------------------------------------------
+# 1. Save this file.
+# 2. Run:
+#    git add Ex2_conditionals.py
+#    git commit -m "Completed FizzBuzz challenge"
+#    git push origin main
 # -------------------------------------------
